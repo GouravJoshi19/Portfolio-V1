@@ -12,7 +12,7 @@ export default function FooterBar() {
         <div className="flex flex-row w-3/4 justify-between max-lg:flex-col items-center gap-2 text-center">
           <p className="text-xl font-semibold">Copyright © {year}. All rights are reserved</p>
           <div className="flex flex-row gap-5">
-            <Link isExternal href="#">
+            <Link isExternal href="https://www.linkedin.com/in/gourav-joshi-8749a02b6/">
               <Linkedin width={30} height={30} color="#fff" />
             </Link>
             <Link isExternal href="https://github.com/GouravJoshi19">
