@@ -10,13 +10,13 @@ export async function POST(req:Request,res:Response) {
       host: "smtp-relay.brevo.com",
       port: 587,
       auth: {
-        user: process.env.NEXT_PUBLIC_EMAIL,
-        pass: process.env.NEXT_PUBLIC_API
+        user: process.env.EMAIL,
+        pass: process.env.API
       }
     })
     const mailOption =  {
       from:email,
-      to:process.env.NEXT_PUBLIC_EMAIL,
+      to:process.env.EMAIL,
       subject:"Email from joshi v1 2023",
       html:`<li>Name = ${name}</li>
           <li>Email = ${email}</li>
@@ -26,7 +26,6 @@ export async function POST(req:Request,res:Response) {
     return NextResponse.json({sucess: true,data:data})
   }
   catch (e) {
-    console.log("Error = ",e)
     return NextResponse.json({sucess: false,error:e})
   }
 }
