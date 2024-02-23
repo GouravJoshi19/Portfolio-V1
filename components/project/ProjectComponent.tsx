@@ -22,7 +22,7 @@ export default function ProjectComponent() {
             Diamond price predictor is an machine learning solution to predict the price of a diamond with many
             attributes such as carat, cut, color, depth and etc of the diamond.
           </p>
-          <Link className="text-sm font-semibold my-3" isExternal showAnchorIcon href="https://diamond-price-predicter-yehkkgbsuknpjdi5yewp8c.streamlit.app/">Read More</Link>
+          <Link className="text-sm font-semibold my-3" isExternal showAnchorIcon href="https://diamond-price-predicter-yehkkgbsuknpjdi5yewp8c.streamlit.app/">Live Demo</Link>
         </div>
       </CardBody>
     </Card>
