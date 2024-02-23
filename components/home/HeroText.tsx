@@ -9,7 +9,7 @@ export function HeroText() {
         Data Scientist
       </h1>
       <p className="w-3/4 text-2xl text-start text-[#555555] ps-1 py-5 max-lg:text-center w-full">
-        Hi, I'm Gourav Joshi. A passionate Data Scientist based in Bikaner, Rajasthan.🐪
+        Hi, I am Gourav Joshi. A passionate Data Scientist based in Bikaner, Rajasthan.🐪
       </p>
       <div className="flex flex-row mt-5 gap-2">
         <Link isExternal href="#">
