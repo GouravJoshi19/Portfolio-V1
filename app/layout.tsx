@@ -5,7 +5,7 @@ import { NextUiProviders } from "./providers";
 import NavbarComponent from "@/components/navbar/NavbarComponent";
 import FooterBar from "@/components/footer/FooterBar";
 
-const inter = Poppins({ subsets:["devanagari"] ,weight:["100","200","300","600","800","900"]})
+const inter = Poppins({ subsets: ["devanagari"], weight: ["100", "200", "300", "600", "800", "900"] })
 
 export const metadata: Metadata = {
   title: "Create Next App",

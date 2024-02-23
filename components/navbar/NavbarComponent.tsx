@@ -19,31 +19,33 @@ export default function NavbarComponent() {
 
       <NavbarContent className="hidden sm:flex gap-4 font-bold" justify="end">
         <NavbarItem>
-          <Link className="hover:text-[#1e81f2] text-lg" color="foreground" href="#home">Home</Link>
+          <Link className="hover:text-[#1e81f2] text-md" color="foreground" href="#home">Home</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="hover:text-[#1e81f2] text-lg" color="foreground" href="#about">About</Link>
+          <Link className="hover:text-[#1e81f2] text-md" color="foreground" href="#about">About</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="hover:text-[#1e81f2] text-lg" color="foreground" href="#contact">Contact</Link>
+          <Link className="hover:text-[#1e81f2] text-md" color="foreground" href="#project">Projects</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="hover:text-[#1e81f2] text-lg" color="foreground" href="#project">Project</Link>
+          <Link className="hover:text-[#1e81f2] text-md" color="foreground" href="#contact">Contact</Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>
-        <NavbarMenuItem>
-          <Link href="#home">Home</Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link href="#contact">Contact</Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link href="#project">About</Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link href="#project">Project</Link>
-        </NavbarMenuItem>
+      <NavbarMenu className="flex flex-col items-start">
+        <div className="flex flex-col justify-evenly items-center h-1/2 w-full">
+          <NavbarMenuItem>
+            <Link className="text-2xl font-semibold" color="foreground" href="#home">Home</Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link className="text-2xl font-semibold" color="foreground" href="#project">About</Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link className="text-2xl font-semibold" color="foreground" href="#project">Project</Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link className="text-2xl font-semibold" color="foreground" href="#contact">Contact</Link>
+          </NavbarMenuItem>
+        </div>
       </NavbarMenu>
     </Navbar>
   );
