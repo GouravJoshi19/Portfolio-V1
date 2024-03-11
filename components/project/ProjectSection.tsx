@@ -8,7 +8,7 @@ export default function ProjectSection() {
           <h1 className="text-2xl font-bold text-[#147efb]">
             My Projects
           </h1>
-          <div className="max-lg:grid grid-rows-1">
+          <div className="max-lg:grid max-lg:grid-rows-1 lg:grid lg:grid-cols-2">
             <ProjectComponent />
           </div>
         </div>
